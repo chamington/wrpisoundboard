@@ -1,12 +1,17 @@
 <html><head></head><body>
+<p style="display: inline;">1=cheer</p>
+<p style="display: inline;">2=aww</p>
+<p style="display: inline;">3=boo</p>
+<p style="display: inline;">4=laugh</p>
+<p style="display: inline;">5=angry</p>
 <p>A=Tim Allen grunt</p>
 <p>B=bruh</p>
 <p>C=DUUUDE</p>
 <p>D=Billie Eilish duh</p>
-<p>E=cheer</p>
 <p>H=Hug me brotha</p>
 <p>J=That Being Said</p>
 <p>K=Runaway piano</p>
+<p>N=Airhorn</p>
 <p>R=rimshot</p>
 </body>
 
@@ -16,6 +21,22 @@ const log = document.getElementById('log');
 document.addEventListener('keypress', logKey);
 
 function logKey(e) {
+	console.log(`${e.code}`);
+	if (`${e.code}` == "Digit1"){
+		new Audio('cheer.mp3').play()
+	}
+	if (`${e.code}` == "Digit2"){
+		new Audio('aww.mp3').play()
+	}
+	if (`${e.code}` == "Digit3"){
+		new Audio('boo.mp3').play()
+	}
+	if (`${e.code}` == "Digit4"){
+		new Audio('laugh.mp3').play()
+	}
+	if (`${e.code}` == "Digit5"){
+		new Audio('angry.ogg').play()
+	}
 	if (`${e.code}` == "KeyA"){
 		new Audio('grunt.mp3').play()
 	}
@@ -28,9 +49,6 @@ function logKey(e) {
 	if (`${e.code}` == "KeyD"){
 		new Audio('duh.mp3').play()
 	}
-	if (`${e.code}` == "KeyE"){
-		new Audio('cheer.mp3').play()
-	}
 	if (`${e.code}` == "KeyH"){
 		new Audio('hugme.mp3').play()
 	}
@@ -39,6 +57,9 @@ function logKey(e) {
 	}
 	if (`${e.code}` == "KeyK"){
 		new Audio('E.mp3').play()
+	}
+	if (`${e.code}` == "KeyN"){
+		new Audio('airhorn.mp3').play()
 	}
 	if (`${e.code}` == "KeyR"){
 		new Audio('rimshot.mp3').play()
