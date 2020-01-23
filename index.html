@@ -1,4 +1,7 @@
-<html><head></head><body><p id="log"></p></body>
+<html><head></head><body>
+<p>A=Tim Allen grunt</p>
+<p>D=Billie Eilish duh</p>
+</body>
 
 <script>
 const log = document.getElementById('log');
@@ -7,9 +10,10 @@ document.addEventListener('keypress', logKey);
 
 function logKey(e) {
 	if (`${e.code}` == "KeyA"){
-		/*log.textContent += `${e.code}`;*/
-		console.log(`${e.code}`);
 		new Audio('grunt.mp3').play()
+	}
+	if (`${e.code}` == "KeyD"){
+		new Audio('duh.mp3').play()
 	}
 }
 
