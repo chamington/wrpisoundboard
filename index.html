@@ -1,0 +1,16 @@
+<html><head></head><body><p id="log"></p></body>
+
+<script>
+const log = document.getElementById('log');
+
+document.addEventListener('keypress', logKey);
+
+function logKey(e) {
+	if (`${e.code}` == "KeyA"){
+		/*log.textContent += `${e.code}`;*/
+		console.log(`${e.code}`);
+		new Audio('grunt.mp3').play()
+	}
+}
+
+</script></html>
