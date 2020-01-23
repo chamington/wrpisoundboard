@@ -1,5 +1,6 @@
 <html><head></head><body>
 <p>A=Tim Allen grunt</p>
+<p>C=DUUUDE</p>
 <p>D=Billie Eilish duh</p>
 </body>
 
@@ -11,6 +12,9 @@ document.addEventListener('keypress', logKey);
 function logKey(e) {
 	if (`${e.code}` == "KeyA"){
 		new Audio('grunt.mp3').play()
+	}
+	if (`${e.code}` == "KeyC"){
+		new Audio('dude.mp3').play()
 	}
 	if (`${e.code}` == "KeyD"){
 		new Audio('duh.mp3').play()
