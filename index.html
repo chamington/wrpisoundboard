@@ -1,9 +1,11 @@
 <html><head></head><body>
 <p>A=Tim Allen grunt</p>
+<p>B=bruh</p>
 <p>C=DUUUDE</p>
 <p>D=Billie Eilish duh</p>
 <p>E=cheer</p>
 <p>J=That Being Said</p>
+<p>R=rimshot</p>
 </body>
 
 <script>
@@ -14,6 +16,9 @@ document.addEventListener('keypress', logKey);
 function logKey(e) {
 	if (`${e.code}` == "KeyA"){
 		new Audio('grunt.mp3').play()
+	}
+	if (`${e.code}` == "KeyB"){
+		new Audio('bruh.mp3').play()
 	}
 	if (`${e.code}` == "KeyC"){
 		new Audio('dude.mp3').play()
@@ -26,6 +31,9 @@ function logKey(e) {
 	}
 	if (`${e.code}` == "KeyJ"){
 		new Audio('thatBeingSaid.mp3').play()
+	}
+	if (`${e.code}` == "KeyR"){
+		new Audio('rimshot.mp3').play()
 	}
 }
 
