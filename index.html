@@ -12,6 +12,7 @@
 <p>J=That Being Said</p>
 <p>K=Runaway piano</p>
 <p>N=Airhorn</p>
+<p>P=Pufferfish</p>
 <p>R=rimshot</p>
 </body>
 
@@ -60,6 +61,9 @@ function logKey(e) {
 	}
 	if (`${e.code}` == "KeyN"){
 		new Audio('airhorn.mp3').play()
+	}
+	if (`${e.code}` == "KeyP"){
+		new Audio('pufferfish.mp3').play()
 	}
 	if (`${e.code}` == "KeyR"){
 		new Audio('rimshot.mp3').play()
